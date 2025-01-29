@@ -407,33 +407,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-4">
-            <div className="recent-job-item">
-              <div className="company-info">
-                <div className="logo">
-                  <a href="/company-details/1">
-                    <img src="/assets/img/blog/no-image.jpg" alt="ssImage" style={imageStyle}/>
-                  </a>
-                </div>
-                <div className="content">
-                  <h4 className="name"><a href="/company-details/1">TCS</a></h4>
-                  <p className="address">Delhi, CP</p>
-                </div>
-              </div>
-              <div className="main-content">
-                <h3 className="title"><a href="/job-details/1">PHP Developer</a></h3>
-                <h5 className="work-type">IT</h5>
-                <p className="desc">PHP, JS, HTML</p>
-              </div>
-              <div className="recent-job-info">
-                <div className="salary">
-                  <h4>18000 INR</h4>
-                  <p>/monthly</p>
-                </div>
-                <a className="btn-theme btn-sm" href="/job-details/1">Apply Now</a>
-              </div>
-            </div>
-          </div>
+          
           
         </div>
       </div>
@@ -684,58 +658,7 @@ const Index = () => {
       </div>
     </section>
    
-    <div className="brand-logo-area">
-          <div className="container pt--0 pb--0" data-aos="fade-down">
-            <div className="row">
-              <div className="col-12">
-                <div className="brand-logo-content" >
-
-                  <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={6}
-      navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}>
-
-                  <div className="swiper brand-logo-slider-container">
-                    <div className="swiper-wrapper">
-
-                      {
-                        ((companyDetails.length>0) && (companyDetails[0]!=='No record found') ? companyDetails.map((item_logo, index)=>
-                        
-                        <SwiperSlide>
-                          <div className="swiper-slide">
-                            
-                            <div className="brand-logo-item">
-                            <img src={"http://localhost:3000/"+item_logo.company_logo} alt={item_logo.company_name}/>
-                            </div>
-                            
-                          </div>
-                        </SwiperSlide>
-                        ) : null)
-                      }
-
-                      
-                    </div>
-                  </div>
-                  
-                  {/* <div className="swiper-btn-wrap">
-                    <div className="brand-swiper-btn-prev">
-                      <i className="icofont-long-arrow-left"></i>
-                    </div>
-                    <div className="brand-swiper-btn-next">
-                      <i className="icofont-long-arrow-right"></i>
-                    </div>
-                  </div> */}
-
-                  </Swiper>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
     
     <section className="testimonial-area bg-color-gray">
           <div className="container" data-aos="fade-down">
